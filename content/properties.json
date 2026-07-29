@@ -78,18 +78,32 @@
       "description": "Spacious design at the top of Bangalore's notable luxury towers. Features structural marble, German home systems, comprehensive wardrobes, and private lakeview terraces."
     },
     {
-      "price": 110000000,
+      "price": 119999998,
       "area": "Contant us ",
       "featured": true,
-      "beds": "na",
+      "beds": "area: 4 acres",
       "region": "Madikeri",
-      "location": "Kushalnagar",
-      "title": "Factory for sale ",
-      "type": "Commercial Properties",
+      "location": "Madikeri",
+      "title": "Land for sale in Madikeri",
+      "type": "Land & Plots",
       "id": 5,
-      "image": "/images/uploads/img-20260520-wa0009.jpg",
+      "image": "/images/uploads/bco.808e1e3c-c4c2-4c39-9555-6feaced12b1d.png",
       "intent": "buy",
-      "description": "a coffee factory for sale in madikeri"
+      "description": "Land for sale in madikeri "
+    },
+    {
+      "price": 119999999,
+      "area": "4 acres",
+      "featured": true,
+      "beds": "NA",
+      "region": "Madikeri 3kms from downtown",
+      "location": "Madikeri",
+      "title": "Land for sale in Madikeri",
+      "type": "Land & Plots",
+      "id": 6,
+      "image": "/images/uploads/bco.808e1e3c-c4c2-4c39-9555-6feaced12b1d.png",
+      "intent": "buy",
+      "description": "A land for sale in Madikeri, located just 3kms from downtown.\nplease contact us or sumbit an enquiry form \n"
     }
   ]
 }
