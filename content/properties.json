@@ -1,0 +1,49 @@
+{
+  "properties_list": [
+    {
+      "id": 1,
+      "title": "Premium Arabica Coffee Estate",
+      "location": "Somwarpet, Coorg",
+      "region": "Somwarpet",
+      "price": 45000000,
+      "type": "Coffee Estates",
+      "intent": "buy",
+      "area": "12 Acres",
+      "beds": "3 BHK Heritage Bungalow included",
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      "featured": true,
+      "description": "This organic estate is located in Coorg's high coffee zone. It includes Arabica crop lines interlocked with premium black pepper vines, gravitational water systems, and a classic heritage bungalow.",
+      "amenities": ["Private Water Spring", "Pepper Vines Intercropped", "Heritage Bungalow", "Staff Quarters", "Drying Yards"]
+    },
+    {
+      "id": 2,
+      "title": "Misty Valleys Luxury Villa",
+      "location": "Madikeri, Coorg",
+      "region": "Madikeri",
+      "price": 180000,
+      "type": "Villas",
+      "intent": "rent",
+      "area": "4,500 sqft",
+      "beds": "4 Bedrooms",
+      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+      "featured": true,
+      "description": "Perched gracefully along an elevated ridge, this private luxury home hosts 270-degree panorama views of mountain valleys. Equipped with thermal glass panels, infinity pool, and custom furnishings.",
+      "amenities": ["Heated Infinity Pool", "Panoramic Valley Views", "Fully Furnished", "24/7 Power Backup", "Dedicated Estate Guard"]
+    },
+    {
+      "id": 3,
+      "title": "The Heights Modern Sky-Penthouse",
+      "location": "Hebbal, Bangalore",
+      "region": "Bangalore",
+      "price": 32000000,
+      "type": "Apartments",
+      "intent": "buy",
+      "area": "3,200 sqft",
+      "beds": "3 Bedrooms",
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+      "featured": true,
+      "description": "Spacious design at the top of Bangalore's notable luxury towers. Features structural marble, German home systems, comprehensive wardrobes, and private lakeview terraces.",
+      "amenities": ["Rooftop Sky deck", "Private Elevators", "Clubhouse Access", "Fully Air Conditioned", "24/7 Security"]
+    }
+  ]
+}

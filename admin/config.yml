@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main # Change to master if your default branch is master
+
+local_backend: true # Enables local editing with 'npx decap-cms-proxy-server'
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site_data"
+    label: "Site Data"
+    files:
+      - file: "content/properties.json"
+        label: "Properties Database"
+        name: "properties"
+        fields:
+          - label: "Properties"
+            name: "properties_list"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "number", value_type: "int"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "Region", name: "region", widget: "string"}
+              - {label: "Price (INR)", name: "price", widget: "number", value_type: "int"}
+              - {label: "Property Type", name: "type", widget: "select", options: ["Coffee Estates", "Apartments", "Villas", "Independent Houses", "Commercial Properties", "Land & Plots"]}
+              - {label: "Offer Type", name: "intent", widget: "select", options: ["buy", "rent", "lease"]}
+              - {label: "Total Built Area / Land Size", name: "area", widget: "string"}
+              - {label: "Bedrooms / Configuration", name: "beds", widget: "string"}
+              - {label: "Property Image", name: "image", widget: "image"}
+              - {label: "Featured", name: "featured", widget: "boolean", default: true}
+              - {label: "Detailed Property Description", name: "description", widget: "text"}
+              - {label: "Features / Amenities", name: "amenities", widget: "list", field: {label: "Amenity", name: "amenity", widget: "string"}}
