@@ -1,6 +1,20 @@
 {
   "properties_list": [
     {
+      "price": 110000000,
+      "area": "Contact for more info",
+      "featured": true,
+      "beds": "na",
+      "region": "Madikeri",
+      "location": "Kushalnagar",
+      "title": "Factory for sale in Madikeri",
+      "type": "Commercial Properties",
+      "id": 4,
+      "image": "/images/uploads/img-20260520-wa0006.jpg",
+      "intent": "buy",
+      "description": "A coffe factory for sale in Kushalnagar, Madikeri\n"
+    },
+    {
       "price": 45000000,
       "area": "12 Acres",
       "featured": true,
@@ -62,20 +76,6 @@
       "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
       "intent": "buy",
       "description": "Spacious design at the top of Bangalore's notable luxury towers. Features structural marble, German home systems, comprehensive wardrobes, and private lakeview terraces."
-    },
-    {
-      "price": 110000000,
-      "area": "Contact for more info",
-      "featured": true,
-      "beds": "na",
-      "region": "Madikeri",
-      "location": "Kushalnagar",
-      "title": "Factory for sale in Madikeri",
-      "type": "Commercial Properties",
-      "id": 4,
-      "image": "/images/uploads/img-20260520-wa0006.jpg",
-      "intent": "buy",
-      "description": "A coffe factory for sale in Kushalnagar, Madikeri\n"
     }
   ]
 }
