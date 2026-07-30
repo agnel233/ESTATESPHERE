@@ -28,7 +28,12 @@ collections:
               - {label: "Offer Type", name: "intent", widget: "select", options: ["buy", "rent", "lease"]}
               - {label: "Total Built Area / Land Size", name: "area", widget: "string"}
               - {label: "Bedrooms / Configuration", name: "beds", widget: "string"}
-              - {label: "Property Image", name: "image", widget: "image"}
+              - label: "Property Images List"
+                name: "images"
+                widget: "list"
+                summary: "{{fields.image}}"
+                fields:
+                  - {label: "Upload Image", name: "image", widget: "image"}
               - {label: "Featured", name: "featured", widget: "boolean", default: true}
               - {label: "Detailed Property Description", name: "description", widget: "text"}
               - {label: "Features / Amenities", name: "amenities", widget: "list", field: {label: "Amenity", name: "amenity", widget: "string"}}
