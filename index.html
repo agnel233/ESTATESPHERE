@@ -668,6 +668,23 @@
             </div>
         </div>
 
+        <!-- 728x90 Standard Banner Container [BODY DISPLAY] -->
+        <div class="container ad-banner-container" style="display: flex; justify-content: center; align-items: center; margin: 30px auto; padding: 10px; background: #fff; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--gray-200); max-width: 760px; overflow: hidden;">
+            <div>
+                <span style="display: block; font-size: 0.65rem; color: var(--gray-500); text-transform: uppercase; text-align: center; margin-bottom: 5px;">Advertisement</span>
+                <script>
+                  atOptions = {
+                    'key' : '276472bfffc0e854b4d71f6934bb9f18',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                  };
+                </script>
+                <script src="https://www.highperformanceformat.com/276472bfffc0e854b4d71f6934bb9f18/invoke.js"></script>
+            </div>
+        </div>
+
         <div class="categories">
             <div class="container">
                 <div class="section-title">
@@ -705,6 +722,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Native Banner Container [BODY DISPLAY] -->
+        <div class="container native-ad-container" style="margin: 40px auto; padding: 24px; background: #fff; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--gray-200);">
+            <span style="display: block; font-size: 0.65rem; color: var(--gray-500); text-transform: uppercase; text-align: center; margin-bottom: 12px; letter-spacing: 0.5px;">Recommended Content</span>
+            <script async="async" data-cfasync="false" src="https://pl30600703.effectivecpmnetwork.com/e8cdcb02657d2a43a66513687fcc65bf/invoke.js"></script>
+            <div id="container-e8cdcb02657d2a43a66513687fcc65bf"></div>
         </div>
 
         <div class="featured-properties">
@@ -1123,6 +1147,12 @@
 
     <div class="toast" id="toast"></div>
 
+    <!-- Popunder Ad Script [BOTTOM PLACEMENT] -->
+    <script src="https://pl30600701.effectivecpmnetwork.com/73/6f/61/736f61e11bbf3c4f792b1ad0dc22dadf.js"></script>
+
+    <!-- Social Bar Ad Script [BOTTOM PLACEMENT] -->
+    <script src="https://pl30600702.effectivecpmnetwork.com/2b/ac/f6/2bacf6f0b393e387306f1a969d7caffe.js"></script>
+
     <script>
         let currentUser = null; 
         let pendingPropertySubmission = null;
@@ -1306,7 +1336,7 @@
                             </div>
                             ` : ''}
                         </div>
-                        <button class="btn btn-dark property-btn" onclick="viewPropertyDetails(${p.id})">View Details</button>
+                        <button class="btn btn-dark property-btn" onclick="viewPropertyDetails('${p.id}')">View Details</button>
                     </div>
                 </div>
             `;
@@ -1376,7 +1406,7 @@
 
         // Safe details popup renderer handling multiple image lists or string fallbacks
         function viewPropertyDetails(id) {
-            const property = propertiesDatabase.find(p => p.id === Number(id));
+            const property = propertiesDatabase.find(p => String(p.id) === String(id));
             if (!property) return;
             
             const images = getPropertyImagesArray(property);
@@ -1455,7 +1485,11 @@
             thumbEl.classList.add('active');
         }
 
-        // Close when clicking the backdrop
+        function toggleDetailsModal(show) {
+            const modal = document.getElementById('propertyDetailsModal');
+            if (show) { modal.classList.add('active'); } else { modal.classList.remove('active'); }
+        }
+
         function closeDetailsModal(event) {
             if (event.target === document.getElementById('propertyDetailsModal')) {
                 toggleDetailsModal(false);
